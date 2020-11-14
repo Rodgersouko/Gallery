@@ -13,9 +13,26 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <center>
-        <h1>Picture Gallery</h1>
-        <h2>Djagon Gallery app.</h2>
+    
+    <center style="background-color: gold;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand text-white" href="/">
+                <h3><strong>Gallery</strong></h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                </ul>
+                <form class="form-inline my-2 my-md-0" action="/search" role="search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Category" name="imagesearch"
+                        aria-label="Search">
+                    <button class="btn btn-info btn-md my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
         <hr>
     </center>
 
@@ -24,7 +41,7 @@
             {% for results in gallarey%}
                 <div class="col-4">
                     {{results.title}}<br>
-                    <img src="{{results.image.url}}" height="150" width="160" alt="{{results.title}}" title="{{results.title}}" /><br>
+                    <img src="{{results.image.url}}" height="300" width="350" alt="{{results.title}}" title="{{results.title}}" /><br>
                     {{results.description}}<br>
                     <hr />
                 </div>
