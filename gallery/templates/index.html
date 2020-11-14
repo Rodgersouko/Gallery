@@ -22,9 +22,9 @@
         <div class="container">
             <div class="row">
             {% for results in gallarey%}
-                <div class="col-3">
+                <div class="col-4">
                     {{results.title}}<br>
-                    <img src="{{results.image.url}}" height="150" width="160" alt="{{results.title}}" title="{{results.title}}" />
+                    <img src="{{results.image.url}}" height="150" width="160" alt="{{results.title}}" title="{{results.title}}" /><br>
                     {{results.description}}<br>
                     <hr />
                 </div>
