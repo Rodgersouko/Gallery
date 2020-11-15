@@ -37,10 +37,10 @@
     </center>
 
         <div class="container" >
-            <div class="row">
+            <div class="row" style="text-align: center;">
             {% for results in gallarey%}
                 <div class="col-4">
-                    {{results.title}}<br>
+                    <h2>{{results.title}}</h2><br>
                     <img style="border-radius: 5%;" src="{{results.image.url}}" height="300" width="350" alt="{{results.title}}" title="{{results.title}}" /><br>
                     {{results.description}}<br>
                     <hr />
