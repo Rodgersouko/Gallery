@@ -1,4 +1,4 @@
-# Password-Lock
+# Gallery
 ## Author
 
 [Rodgers-Ouko](https://github.com/Rodgersouko)
@@ -8,29 +8,38 @@
 This is an application of a personal gallery  that  display  some of my  photos for users.
 
 ## Installation / Setup instruction
+To get the project .......
 
-#### The application requires the following installations to operate 
-* python3.8
+Cloning the repository:
+https://github.com/RodgersOuko/Gallery.git 
+Navigate into the folder and install requirements
+cd Picture-Globe pip install -r requirements.txt 
+Install and activate Virtual
+- python3 -m venv virtual - source virtual/bin/activate  
+Install Dependencies
+pip install -r requirements.txt 
+Setup Database
+SetUp your database User,Password, Host then make migrate
 
-#### Cloning
+python manage.py makemigrations gallery
+Now Migrate
 
-* Open Terminal {Ctrl+Alt+T}
+python manage.py migrate 
+Run the application
+python manage.py runserver 
+Running the application
+python manage.py server 
+Testing the application
+python manage.py test 
+Open the application on your browser 127.0.0.1:8000.
 
-* git clone ```https://github.com/Rodgersouko/Gallery.git```
-
-* cd Password-Lock
-
-* code .
-
-### Running the Application
-* To run the application, open the cloned file in terminal and follow usage steps:
-
-## Technologies Used
-
-* python3.8
+## Technology used
+ Python3.8
+ Django 
+ Heroku
 
 ## Known Bugs
-* There are no known bugs currently but pull requests are allowed incase you spot a bug
+ There are no known bugs currently but pull requests are allowed incase you spot a bug
 
 ## Contact Information 
 
