@@ -13,7 +13,7 @@ To get the project .......
 Cloning the repository:
 https://github.com/RodgersOuko/Gallery.git 
 Navigate into the folder and install requirements
-cd Picture-Globe pip install -r requirements.txt 
+cd Gallery pip install -r requirements.txt 
 Install and activate Virtual
 - python3 -m venv virtual - source virtual/bin/activate  
 Install Dependencies
